@@ -2,4 +2,4 @@ language: c
 
 before_install: cd test
 
-script: test
+script: make
