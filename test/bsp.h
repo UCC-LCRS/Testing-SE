@@ -20,4 +20,8 @@ void led_setBright(uint8_t led, uint8_t value);
 void BSP_ADC_Init(void);
 uint8_t BSP_GetBrightness(void);
 
+
+void BSP_Led_On(uint8_t led);
+void BSP_Led_Off(uint8_t led);
+
 #endif

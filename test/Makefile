@@ -19,7 +19,7 @@ CFLAGS=-I. -DTEST
 
 
 #Files We Are To Work With
-SRC = test.c bsp_test.c unity.c
+SRC = test.c bsp.c ../src/app.c unity.c
 OBJ = $(patsubst %.c,%.o,$(SRC))
 DEP = unity.h unity_internals.h
 TGT = test$(TARGET_EXTENSION)
