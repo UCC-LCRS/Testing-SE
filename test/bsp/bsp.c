@@ -18,7 +18,8 @@ void BSP_Led_Off(uint8_t led) {
 }
 
 void BSP_Init(void) {
-	for (int i = 0; i < 8; i++)
+	int i;
+	for (i = 0; i < 8; i++)
 		leds_out[8] = 0;
 }
 
