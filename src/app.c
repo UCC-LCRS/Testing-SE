@@ -1,7 +1,4 @@
 
-
-
-
 void APP_1ms(void) {
 
 
