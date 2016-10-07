@@ -6,7 +6,6 @@
  */
 #include "bsp.h"
 #include "stm32f4xx.h"
-#include "stm32f4_discovery.h"
 
 #define EXP_BOARD_POT_PIN				   GPIO_PIN_2
 #define EXP_BOARD_POT_PORT                 GPIOC
@@ -160,7 +159,7 @@ void BSP_Led_On(uint8_t led){
 
 void BSP_Led_Off(uint8_t led){
 
-	HAL_GPIO_WritePin(GPIOD, leds_barra[led], GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOD, leds_barra[led], GPIO_PIN_RESET);
 }
 
 uint32_t Get_SW_State(void) {
